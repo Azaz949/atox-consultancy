@@ -1,13 +1,13 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
 
-interface ServiceProps {
+export interface ServiceProps {
   title: string;
   description: string;
   icon: JSX.Element;
 }
 
-const serviceList: ServiceProps[] = [
+export const serviceList: ServiceProps[] = [
   {
     title: "Custom SAP Solutions",
     description:

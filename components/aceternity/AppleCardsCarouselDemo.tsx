@@ -4,14 +4,17 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 export function AppleCardsCarouselDemo() {
-  const cards = data.map((card, index) => (
+  const cards1 = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
+  const cards = services.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-      Featured Insights
+        Featured Insights
       </h2>
       <Carousel items={cards} />
     </div>
@@ -21,7 +24,7 @@ export function AppleCardsCarouselDemo() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
@@ -31,7 +34,11 @@ const DummyContent = () => {
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                 The first rule of Apple club is that you boast about Apple club.
               </span>{" "}
-              Systems Limited was a silver sponsor at Temenos Community Forum 2024 (TCF), one of the world’s largest global banking technology conferences — where the financial community met to discuss modern technologies such as SaaS, Cloud, generative and explainable AI, big data and embedded finance.
+              Systems Limited was a silver sponsor at Temenos Community Forum
+              2024 (TCF), one of the world’s largest global banking technology
+              conferences — where the financial community met to discuss modern
+              technologies such as SaaS, Cloud, generative and explainable AI,
+              big data and embedded finance.
             </p>
             <Image
               src="https://assets.aceternity.com/macbook.png"
@@ -84,5 +91,37 @@ const data = [
     title: "Shaping new frontiers in banking at TCF 2024",
     src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
+  },
+];
+
+const services = [
+  {
+    category: "SAP B1",
+    title: "Support",
+    src:"",
+    Description:
+      "Our SAP B1 Support service ensures that your SAP Business One system operates smoothly and efficiently. We provide ongoing technical support, troubleshoot issues, and perform regular system checks to ensure optimal performance. Our team of experts is available to resolve any problems and answer questions, helping you get the most out of your SAP B1 investment.",
+    Tagline: "Your SAP B1, Our Expertise – Support You Can Rely On.",
+  },
+  {
+    category: "SAP B1",
+    title: "Implementation",
+    Description:
+      "Our SAP B1 Implementation service is designed to help businesses successfully implement SAP Business One. We work closely with your team to understand your business needs and develop a customized implementation plan that meets your specific requirements. Our experienced consultants will guide you through every step of the implementation process, ensuring a smooth and successful deployment.",
+    Tagline: "Implementing SAP B1 – Your Path to Success.",
+  },
+  {
+    category: "SAP B1",
+    title: "Customization",
+    Description:
+      "Our SAP B1 Customization service is designed to help businesses tailor SAP Business One to meet their unique requirements. We work closely with your team to identify areas where customization is needed and develop solutions that enhance the functionality of your system. Our experienced consultants will guide you through every step of the customization process, ensuring that your SAP B1 system meets your specific needs.",
+    Tagline: "Customizing SAP B1 – Tailored Solutions for Your Business.",
+  },
+  {
+    category: "SAP B1",
+    title: "Training",
+    Description:
+      "Our SAP B1 Training service is designed to help businesses get the most out of their SAP Business One system. We offer a range of training programs that cover all aspects of SAP B1, from basic functionality to advanced features. Our experienced trainers will work with your team to develop a customized training plan that meets your specific needs. Whether you are new to SAP B1 or looking to expand your knowledge, we have a training program that is right for you.",
+    Tagline: "Empowering Your Team – Training for Success.",
   },
 ];
