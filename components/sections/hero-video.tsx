@@ -8,7 +8,7 @@ type Props = {};
 
 function HeroVideo({}: Props) {
   return (
-    <div className="relative h-screen overflow-hidde">
+    <div className="relative h-screen -mt-14">
       <video
         className="absolute inset-0 w-full h-full object-cover brightness-75 "
         src="/video2.mp4"

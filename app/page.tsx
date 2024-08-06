@@ -25,11 +25,10 @@ export default function Home() {
         <HeroVideo />
       </div>
       <GoogleGeminiEffectDemo />
-      {/* <Hero />
       <div className=" dark:bg-slate-400">
-      
-      <AppleCardsCarouselDemo />
-      </div> */}
+        <AppleCardsCarouselDemo />
+      </div>
+      {/* <Hero />*/}
       {/* <OrbitingCirclesDemo /> */}
       <div className="bg-slate-700 py-16">
         <GlareCardDemo />

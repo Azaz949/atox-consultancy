@@ -98,30 +98,33 @@ const services = [
   {
     category: "SAP B1",
     title: "Support",
-    src:"",
-    Description:
+    src: "/support-live.jpg",
+    description:
       "Our SAP B1 Support service ensures that your SAP Business One system operates smoothly and efficiently. We provide ongoing technical support, troubleshoot issues, and perform regular system checks to ensure optimal performance. Our team of experts is available to resolve any problems and answer questions, helping you get the most out of your SAP B1 investment.",
-    Tagline: "Your SAP B1, Our Expertise – Support You Can Rely On.",
+    tagline: "Your SAP B1, Our Expertise – Support You Can Rely On.",
   },
   {
     category: "SAP B1",
     title: "Implementation",
-    Description:
+    src: "/implementation.jpg",
+    description:
       "Our SAP B1 Implementation service is designed to help businesses successfully implement SAP Business One. We work closely with your team to understand your business needs and develop a customized implementation plan that meets your specific requirements. Our experienced consultants will guide you through every step of the implementation process, ensuring a smooth and successful deployment.",
-    Tagline: "Implementing SAP B1 – Your Path to Success.",
+    tagline: "Implementing SAP B1 – Your Path to Success.",
   },
   {
     category: "SAP B1",
     title: "Customization",
-    Description:
+    src: "/customized.jpg",
+    description:
       "Our SAP B1 Customization service is designed to help businesses tailor SAP Business One to meet their unique requirements. We work closely with your team to identify areas where customization is needed and develop solutions that enhance the functionality of your system. Our experienced consultants will guide you through every step of the customization process, ensuring that your SAP B1 system meets your specific needs.",
-    Tagline: "Customizing SAP B1 – Tailored Solutions for Your Business.",
+    tagline: "Customizing SAP B1 – Tailored Solutions for Your Business.",
   },
   {
     category: "SAP B1",
     title: "Training",
-    Description:
+    src: "/support-live.jpg",
+    description:
       "Our SAP B1 Training service is designed to help businesses get the most out of their SAP Business One system. We offer a range of training programs that cover all aspects of SAP B1, from basic functionality to advanced features. Our experienced trainers will work with your team to develop a customized training plan that meets your specific needs. Whether you are new to SAP B1 or looking to expand your knowledge, we have a training program that is right for you.",
-    Tagline: "Empowering Your Team – Training for Success.",
+    tagline: "Empowering Your Team – Training for Success.",
   },
 ];
