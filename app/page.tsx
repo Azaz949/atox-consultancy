@@ -8,7 +8,6 @@ import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { Services } from "@/components/Services";
 import { OrbitingCirclesDemo } from "@/components/magicui-blocks/OrbitingCirclesDemo";
 import ServiceBlock from "@/components/sections/service-block";
 import { AppleCardsCarouselDemo } from "@/components/aceternity/AppleCardsCarouselDemo";
@@ -17,6 +16,7 @@ import { GoogleGeminiEffectDemo } from "@/components/aceternity/GoogleGeminiEffe
 import { GlareCardDemo } from "@/components/aceternity/GlareCardDemo";
 import HeroVideo from "@/components/sections/hero-video";
 import JoinUsVideoSection from "@/components/sections/Join-us-video";
+import { Services } from "@/components/sections/Services";
 
 export default function Home() {
   return (
@@ -24,6 +24,8 @@ export default function Home() {
       <div id="home">
         <HeroVideo />
       </div>
+      <Services />
+
       <GoogleGeminiEffectDemo />
       <div className=" dark:bg-slate-400">
         <AppleCardsCarouselDemo />
@@ -37,9 +39,8 @@ export default function Home() {
       <About />
       <Cta />
       <JoinUsVideoSection />
-      <HowItWorks />
-      <Features />
-      {/* <Services /> */}
+      {/* <Features /> */}
+      <Services />
       <FAQ />
       <Footer />
       <ScrollToTop />

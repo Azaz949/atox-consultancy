@@ -56,19 +56,6 @@ export const HowItWorks = () => {
         that you achieve sustained growth and maximum ROI.
       </p>
       <HoverEffect items={features} />
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map(({ icon, title, description }: FeatureProps) => (
-          <Card key={title} className="bg-muted/50">
-            <CardHeader>
-              <CardTitle className="grid gap-4 place-items-center">
-                {icon}
-                {title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>{description}</CardContent>
-          </Card>
-        ))}
-      </div> */}
     </section>
   );
 };
