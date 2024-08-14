@@ -1,5 +1,5 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { services } from "@/data/services";
+import { SAPServices } from "@/data/services";
 
 export const Services = () => {
   return (
@@ -14,7 +14,7 @@ export const Services = () => {
         necessary adjustments. Our commitment to continuous optimization ensures
         that you achieve sustained growth and maximum ROI.
       </p>
-      <HoverEffect items={services} />
+      <HoverEffect items={SAPServices} />
     </section>
   );
 };

@@ -1,9 +1,8 @@
 "use client";
+import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import Image from "next/image";
-import React from "react";
-import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
-export function AppleCardsCarouselDemo() {
+export function FeaturedInsights() {
   const cards1 = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
@@ -12,11 +11,13 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Featured Insights
-      </h2>
-      <Carousel items={cards} />
+    <div id="features" className=" dark:bg-slate-400">
+      <div className="w-full h-full py-20">
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+          Featured Insights
+        </h2>
+        <Carousel items={cards} />
+      </div>
     </div>
   );
 }
@@ -34,7 +35,7 @@ const DummyContent = () => {
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                 The first rule of Apple club is that you boast about Apple club.
               </span>{" "}
-              Systems Limited was a silver sponsor at Temenos Community Forum
+              Atox Consulting was a silver sponsor at Temenos Community Forum
               2024 (TCF), one of the world’s largest global banking technology
               conferences — where the financial community met to discuss modern
               technologies such as SaaS, Cloud, generative and explainable AI,
@@ -102,6 +103,7 @@ const services = [
     description:
       "Our SAP B1 Support service ensures that your SAP Business One system operates smoothly and efficiently. We provide ongoing technical support, troubleshoot issues, and perform regular system checks to ensure optimal performance. Our team of experts is available to resolve any problems and answer questions, helping you get the most out of your SAP B1 investment.",
     tagline: "Your SAP B1, Our Expertise – Support You Can Rely On.",
+    content : "",
   },
   {
     category: "SAP B1",
@@ -110,6 +112,7 @@ const services = [
     description:
       "Our SAP B1 Implementation service is designed to help businesses successfully implement SAP Business One. We work closely with your team to understand your business needs and develop a customized implementation plan that meets your specific requirements. Our experienced consultants will guide you through every step of the implementation process, ensuring a smooth and successful deployment.",
     tagline: "Implementing SAP B1 – Your Path to Success.",
+    content : "",
   },
   {
     category: "SAP B1",
@@ -118,6 +121,7 @@ const services = [
     description:
       "Our SAP B1 Customization service is designed to help businesses tailor SAP Business One to meet their unique requirements. We work closely with your team to identify areas where customization is needed and develop solutions that enhance the functionality of your system. Our experienced consultants will guide you through every step of the customization process, ensuring that your SAP B1 system meets your specific needs.",
     tagline: "Customizing SAP B1 – Tailored Solutions for Your Business.",
+    content : "",
   },
   {
     category: "SAP B1",
@@ -126,5 +130,6 @@ const services = [
     description:
       "Our SAP B1 Training service is designed to help businesses get the most out of their SAP Business One system. We offer a range of training programs that cover all aspects of SAP B1, from basic functionality to advanced features. Our experienced trainers will work with your team to develop a customized training plan that meets your specific needs. Whether you are new to SAP B1 or looking to expand your knowledge, we have a training program that is right for you.",
     tagline: "Empowering Your Team – Training for Success.",
+    content : "",
   },
 ];
